@@ -39,13 +39,42 @@
         <source src="https://randomguess">
         <source src="https://www.w3schools.com/html/mov_bbb.mp4">
     </video>
-    <p>This is used to provide multuple src's, if one fails the other is displayed.</p>
+    <p>This is used to provide multuple src's, if one fails the other src is displayed.</p>
     <hr>
     <h2>Youtube-Iframe</h2>
     <b>&ltiframe width="320" height="560" src="https://www.youtube.com/embed/CxpCTgA6kx8" title="Kat lo.. | Ashneer grover says | #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt&lt/iframe&gt</b><br>
     <iframe width="160" height="270" src="https://www.youtube.com/embed/CxpCTgA6kx8" title="Kat lo.. | Ashneer grover says | #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <hr>
     <h2>Audio</h2>
+    <pre><b>
+        &ltaudio src="https://www.w3schools.com/html/mov_bbb.mp4" controls&gtText&lt/audio&gt
+    </b></pre>
+    <audio src="https://www.w3schools.com/html/mov_bbb.mp4" controls></audio>
+    <ul>
+        <li>Boolean Attributes
+            <ol>
+                <li>controls: for controls of the audio</li>
+                <li>autoplay: to autoplay the audio for the very first time</li>
+                <li>muted: for audio to be muted initially</li>
+            </ol>
+        </li>
+        <li>The Text is display when the browser fails to play the video</li>
+    </ul>
+    <hr>
+    <h2>Audio</h2>
+    <pre><b>
+    &ltaudio controls&gt
+        &ltsource src="https://randomguess.com"&gt
+        &ltsource src="https://www.w3schools.com/html/mov_bbb.mp4"&gt
+    &lt/audio&gt
+    </b></pre>
+    <audio controls>
+        <source src="https://randomguess">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+    </audio>
+    <p>This is used to provide multuple src's, if one fails the other src is fetched.</p>
+    <hr>
+    <h2>Tables</h2>
     
 </body>
 
