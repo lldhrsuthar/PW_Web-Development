@@ -1,24 +1,8 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
     box-sizing: border-box;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;    
-}
-body{
-    height: 100vh;
-    width: 100vw;
-    background-color: #edf1fd;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-li{
-    list-style: none;
-    cursor: pointer;
-}
-a{
-    text-decoration: none;
 }
 button{
     background-color: rgb(18, 155, 155);
@@ -35,104 +19,267 @@ button:hover{
     color: rgb(18, 155, 155);
     border: 1px solid black;
 }
-header{
-    padding: 15px 0;
-}
-nav{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-nav .logo{
-    font-weight: 700;
-    font-size: 25px;
+li{
+    list-style: none;
     cursor: pointer;
 }
-nav ul li a{
-    color: #616161;
+a{
+    text-decoration: none;
 }
-nav ul{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    font-weight: 500;
-}
-nav ul li:hover{
-    font-weight: 900;
-    text-decoration: underline #616161;
-}
-.search-field{
-    display: flex;
-    gap: 30px;
-}
-input{
-    padding: 4px 10px;
-}
-.hero-section{
-    display: flex;
-    align-items: center;
+@media (width<=600px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        height: 100vh;
+    }
+    .hero-right-section img{
+        width: 300px;
+        margin-bottom: 25px;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    footer{
+        display: flex;
+        background-color: #7c7878;
+        flex-direction: column;
+        height: 100px;
+        font-size: large;
+        color: aliceblue;
+        padding: 10px;
+        font-weight: 900;
+    }
+    footer ul{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+    footer ul li a i{
+        font-size: 30px;
+        color: aliceblue;
+    }
+    footer p{
+        text-align: center;
+    }
+    .hero-left-section h1, .hero-left-section p{
+        padding: 0 10px;
+    }
+    .hero-right-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .hero-section .hero-left-section h1 span{
+        font-size: 30px;
+        color: rgb(18, 155, 155);
+    }
+    .hero-section .hero-left-section h1{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .hero-section .hero-left-section p{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .hero-section .hero-left-section p span{
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(18, 155, 155);
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
 
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    header{
+        background-color: rgb(18, 155, 155);
+        border-bottom: 2px solid black;
+    }
+    header nav .search-field{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: space-evenly;
+    }
+    header nav ul li:hover{
+        background-color: #0c7575;
+        border-top: 1px dotted white;
+        border-bottom: 1px dotted white;
+        font-weight: 900;
+        
+    }   
+    header nav .logo{
+        font-weight: 900;
+        font-size: 25px;
+        margin: 5px 10px;
+
+    }
+    header nav ul li a{
+        color: aliceblue;
+        font-weight: 500;
+    }
+    input{
+        border-radius: 5px;
+        padding-left: 10px;
+    }
 }
-.hero-left-section{
-    width: 60%;
-    padding: 0 8%;
-}
-.hero-left-section h1{
-    margin-bottom: 16px;
-    font-weight: 800;
-    font-size: 38px;
-}
-.hero-left-section h1 span{
-    color: rgb(18, 155, 155);
-    font-weight: 900;
-    background-color: #dfdfe0;
-    padding: 0 15px;
-}
-.hero-left-section p{
-    font-weight: 500;
-    font-size: 30px;
-}
-.hero-left-section p span{
-    color: rgb(18, 155, 155);
-    font-size: 25px;
-    font-weight: 700;
-}
-.hero-right-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    gap: 30px;
-}
-.hero-right-section-btn{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-.hero-right-section img{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-}
-footer{
-    font-weight: 600;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-}
-footer ul{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-footer ul li i:hover{
-    color: black;
-    font-weight: 900;
-}
-footer ul li i{
-    font-size: 20px;
-    font-weight: 700;
-    color: rgb(24, 49, 83);
+@media (min-width: 992px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;    
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #edf1fd;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    li{
+        list-style: none;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        background-color: rgb(18, 155, 155);
+        padding: 4px 10px;
+        cursor: pointer;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-weight: 700;
+        width: fit-content;
+    }
+    button:hover{
+        background-color: white;
+        color: rgb(18, 155, 155);
+        border: 1px solid black;
+    }
+    header{
+        padding: 15px 0;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav .logo{
+        font-weight: 700;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul li a{
+        color: #616161;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-weight: 500;
+    }
+    nav ul li:hover{
+        font-weight: 900;
+        text-decoration: underline #616161;
+    }
+    .search-field{
+        display: flex;
+        gap: 30px;
+    }
+    input{
+        padding: 4px 10px;
+    }
+    .hero-section{
+        display: flex;
+        align-items: center;
+    
+    }
+    .hero-left-section{
+        width: 60%;
+        padding: 0 8%;
+    }
+    .hero-left-section h1{
+        margin-bottom: 16px;
+        font-weight: 800;
+        font-size: 38px;
+    }
+    .hero-left-section h1 span{
+        color: rgb(18, 155, 155);
+        font-weight: 900;
+        background-color: #dfdfe0;
+        padding: 0 15px;
+    }
+    .hero-left-section p{
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .hero-left-section p span{
+        color: rgb(18, 155, 155);
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .hero-right-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        gap: 30px;
+    }
+    .hero-right-section-btn{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .hero-right-section img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+    footer{
+        font-weight: 600;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    footer ul{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    footer ul li i:hover{
+        color: black;
+        font-weight: 900;
+    }
+    footer ul li i{
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(24, 49, 83);
+    }
 }
