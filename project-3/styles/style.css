@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(../assets/pexels-maxyne-barcel-10402282\ 1.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+button{
+    color: white;
+    border: none;
+    background-color: rgb(192, 84, 45);
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(192, 84, 45);
+    background-color: white;
+    opacity: 0.5;
+    border: 1px solid rgb(192, 84, 45);
+    font-weight: 900;
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main div h1{
+    color: rgb(206, 206, 46);
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+}
+footer img{
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav{
+    width: 50%;
+}
+li, li a{
+    list-style: none;
+    color: rgb(206, 206, 46);
+    font-weight: 700;
+}
+li a:hover{
+    font-weight: 900;
+    text-decoration: 2px solid underline;
+}
+header div img{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 40px;
+}
+header div button{
+    margin-right: 10px;
+    margin-top: 10px;
+}

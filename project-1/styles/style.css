@@ -1,9 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif; 
-    box-sizing: border-box;
-}
 button{
     background-color: rgb(18, 155, 155);
     padding: 4px 10px;
@@ -26,124 +20,6 @@ li{
 a{
     text-decoration: none;
 }
-@media (width<=600px){
-    body{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100vw;
-        height: 100vh;
-    }
-    .hero-right-section img{
-        width: 300px;
-        margin-bottom: 25px;
-    }
-    .hero-section{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    footer{
-        display: flex;
-        background-color: #7c7878;
-        flex-direction: column;
-        height: 100px;
-        font-size: large;
-        color: aliceblue;
-        padding: 10px;
-        font-weight: 900;
-    }
-    footer ul{
-        display: flex;
-        margin-top: 10px;
-        justify-content: space-around;
-    }
-    footer ul li a i{
-        font-size: 30px;
-        color: aliceblue;
-    }
-    footer p{
-        text-align: center;
-    }
-    .hero-left-section h1, .hero-left-section p{
-        padding: 0 10px;
-    }
-    .hero-right-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    .hero-section .hero-left-section h1 span{
-        font-size: 30px;
-        color: rgb(18, 155, 155);
-    }
-    .hero-section .hero-left-section h1{
-        font-size: 25px;
-        font-weight: 700;
-    }
-    .hero-section .hero-left-section p{
-        font-size: 22px;
-        font-weight: 500;
-    }
-    .hero-section .hero-left-section p span{
-        font-size: 24px;
-        font-weight: 600;
-        color: rgb(18, 155, 155);
-    }
-    header nav{
-        display: flex;
-        flex-direction: column;
-
-    }
-    header nav ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav ul li{
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        border-radius: 20px;
-        font-size: 20px;
-    }
-    header{
-        background-color: rgb(18, 155, 155);
-        border-bottom: 2px solid black;
-    }
-    header nav .search-field{
-        display: flex;
-        margin-bottom: 10px;
-        justify-content: space-evenly;
-    }
-    header nav ul li:hover{
-        background-color: #0c7575;
-        border-top: 1px dotted white;
-        border-bottom: 1px dotted white;
-        font-weight: 900;
-        
-    }   
-    header nav .logo{
-        font-weight: 900;
-        font-size: 25px;
-        margin: 5px 10px;
-
-    }
-    header nav ul li a{
-        color: aliceblue;
-        font-weight: 500;
-    }
-    input{
-        border-radius: 5px;
-        padding-left: 10px;
-    }
-}
-@media (min-width: 992px){
     *{
         margin: 0;
         padding: 0;
@@ -282,4 +158,3 @@ a{
         font-weight: 700;
         color: rgb(24, 49, 83);
     }
-}
