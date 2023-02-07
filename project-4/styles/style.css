@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;  
+}
+li{
+    list-style: none;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.main-right img{
+    width: 80%;
+}
+header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+header div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div ul{
+    display: flex;
+    margin-left: 30px;
+}
+main{
+    display: flex;
+}
+.main-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 40%;
+    margin-left: 10px;
+}
+.main-right{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    height: 80%;
+    margin-left: 10px;
+}
+header div button{
+    margin-right: 10px;
+}
+button{
+    color: white;
+    background-color: rgb(116, 117, 218);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+a:hover{
+    text-decoration: 2px underline black;
+    font-weight: 900;
+}
+button:hover{
+    color: rgb(116, 117, 218);
+    background-color: white;
+    border: 2px solid rgb(116, 117, 218);
+    font-weight: 800;
+}
+.main-left h1{
+    font-size: 45px;
+    color: rgb(36, 38, 121);
+    font-weight: 600;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.main-left h1 span{
+    color: rgb(116, 117, 218);
+}
+.main-left p{
+    margin-bottom: 20px;
+    color: gray;
+}
+.main-left div{
+    /* width: 50%; */
+    margin-left: 30px;
+}

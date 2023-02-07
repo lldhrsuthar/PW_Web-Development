@@ -9,6 +9,7 @@ a{
 }
 body{
     background-image: url(../assets/pexels-maxyne-barcel-10402282\ 1.png);
+    background-blend-mode: multiply;
     background-size: cover;
     height: 100vh;
     display: flex;
